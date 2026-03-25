@@ -3,112 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Вікі: Червона книга України</title>
+    <title>Червона книга України</title>
     <style>
-        /* Стилі для гарного вигляду */
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; background: #f0f2f0; color: #333; }
-        header { background: #1b4332; color: white; padding: 40px 20px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        nav { background: #2d6a4f; padding: 15px; text-align: center; sticky; top: 0; }
-        nav a { color: white; margin: 0 20px; text-decoration: none; font-weight: bold; font-size: 18px; }
-        nav a:hover { text-decoration: underline; color: #d8f3dc; }
-        .container { max-width: 900px; margin: 30px auto; padding: 20px; background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        
-        .animal-card { 
-            display: flex; 
-            flex-wrap: wrap;
-            border: 1px solid #e0e0e0; 
-            padding: 20px; 
-            margin-bottom: 30px; 
-            border-radius: 10px; 
-            background: #fafafa;
-            transition: transform 0.2s;
-        }
-        .animal-card:hover { transform: translateY(-5px); box-shadow: 0 6px 12px rgba(0,0,0,0.1); }
-        
-        .animal-img { 
-            width: 100%; 
-            max-width: 300px; 
-            height: 200px; 
-            object-fit: cover; 
-            border-radius: 8px; 
-        }
-        
-        .animal-info { flex: 1; min-width: 300px; padding: 0 20px; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; margin: 0; background: #f0f2f0; color: #333; }
+        header { background: #1b4332; color: white; padding: 30px 20px; text-align: center; }
+        .container { max-width: 900px; margin: 20px auto; padding: 20px; background: white; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .animal-card { display: flex; flex-wrap: wrap; border: 1px solid #eee; padding: 20px; margin-bottom: 20px; border-radius: 10px; background: #fff; }
+        .animal-img { width: 300px; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 10px; }
+        .animal-info { flex: 1; min-width: 280px; padding: 0 20px; }
+        .status { background: #e74c3c; color: white; padding: 5px 10px; border-radius: 5px; font-weight: bold; display: inline-block; margin-bottom: 10px; }
         h2 { color: #1b4332; border-bottom: 2px solid #2d6a4f; padding-bottom: 10px; }
-        h3 { margin-top: 0; color: #2d6a4f; }
-        .status { 
-            display: inline-block;
-            background: #e74c3c; 
-            color: white; 
-            padding: 4px 10px; 
-            border-radius: 4px; 
-            font-size: 14px; 
-            font-weight: bold; 
-            margin-bottom: 10px;
-        }
-        footer { text-align: center; padding: 30px; color: #666; font-size: 14px; }
+        footer { text-align: center; padding: 20px; color: #666; }
     </style>
 </head>
 <body>
 
 <header>
     <h1>Тварини Червоної книги України</h1>
-    <p>Збережемо природу нашої Батьківщини разом</p>
+    <p>Автор проєкту: <strong>Твоє Ім'я та Прізвище</strong></p>
 </header>
 
-<nav>
-    <a href="#info">Про проєкт</a>
-    <a href="#mammals">Ссавці</a>
-    <a href="#birds">Птахи</a>
-</nav>
-
 <div class="container">
-    <section id="info">
-        <h2>Про проєкт</h2>
-        <p>«Червона книга України: Тваринний світ» — це інформаційний довідник, присвячений рідкісним та зникаючим видам тварин нашої країни. Наша мета — познайомити вас із тими мешканцями лісів та степів, які потребують нашої допомоги та особливої охорони.</p>
-    </section>
-
-    <section id="mammals">
-        <h2>Ссавці</h2>
-        
-        <!-- Картка: Зубр -->
-        <div class="animal-card">
-            <img src="https://upload.wikimedia.org" alt="Зубр" class="animal-img">
-            <div class="animal-info">
-                <h3>Зубр (Bison bonasus)</h3>
-                <span class="status">Статус: Зникаючий</span>
-                <p>Найбільша наземна тварина Європи. В Україні вільні популяції існують у Волинській, Чернівецькій та Київській областях.</p>
-            </div>
+    <h2>Ссавці</h2>
+    
+    <div class="animal-card">
+        <img src="https://images.unsplash.com" alt="Зубр" class="animal-img">
+        <div class="animal-info">
+            <h3>Зубр (Bison bonasus)</h3>
+            <span class="status">Статус: Зникаючий</span>
+            <p>Найбільша наземна тварина Європи. В Україні вільні популяції існують у Волинській, Чернівецькій та Київській областях.</p>
         </div>
+    </div>
 
-        <!-- Картка: Кіт лісовий -->
-        <div class="animal-card">
-            <img src="https://upload.wikimedia.org" alt="Кіт лісовий" class="animal-img">
-            <div class="animal-info">
-                <h3>Кіт лісовий (Felis silvestris)</h3>
-                <span class="status">Статус: Вразливий</span>
-                <p>Мешканець Карпат та плавневих лісів Дністра. Він значно більший за свійських котів, має міцні лапи та пухнастий хвіст із чорними кільцями.</p>
-            </div>
+    <div class="animal-card">
+        <img src="https://images.unsplash.com" alt="Кіт лісовий" class="animal-img">
+        <div class="animal-info">
+            <h3>Кіт лісовий (Felis silvestris)</h3>
+            <span class="status">Статус: Вразливий</span>
+            <p>Мешканець Карпат. Він значно більший за свійських котів, має міцні лапи та пухнастий хвіст із чорними кільцями.</p>
         </div>
-    </section>
+    </div>
 
-    <section id="birds">
-        <h2>Птахи</h2>
-        
-        <!-- Картка: Чорний лелека -->
-        <div class="animal-card">
-            <img src="https://upload.wikimedia.org" alt="Лелека чорний" class="animal-img">
-            <div class="animal-info">
-                <h3>Лелека чорний (Ciconia nigra)</h3>
-                <span class="status">Статус: Рідкісний</span>
-                <p>На відміну від білого лелеки, чорний — дуже обережний птах, який гніздиться у глухих лісах Полісся та Карпат.</p>
-            </div>
+    <h2>Птахи</h2>
+    
+    <div class="animal-card">
+        <img src="https://images.unsplash.com" alt="Чорний лелека" class="animal-img">
+        <div class="animal-info">
+            <h3>Лелека чорний (Ciconia nigra)</h3>
+            <span class="status">Статус: Рідкісний</span>
+            <p>Дуже обережний птах, який гніздиться у глухих лісах Полісся та Карпат.</p>
         </div>
-    </section>
+    </div>
 </div>
 
 <footer>
-    <p>&copy; 2026 Проєкт для школи. Автор: Єгор</p>
+    <p>&copy; 2026 Проєкт виконав: <Yehor> </Rozbytskyi></p>
 </footer>
 
 </body>
